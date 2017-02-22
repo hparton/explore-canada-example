@@ -2,7 +2,7 @@
   <transition name="fade" appear>
     <div class="post" v-if="visible">
       <div class="post__header overlay">
-        <img v-bind:src="post.img" alt="">
+        <img ref="hero" v-bind:src="post.img" alt="">
         <div class="header__content">
           <div class="panel__meta-data--left">
             <span class="panel__category">{{ post.category }}</span> / <span class="panel__date">{{ post.date }}</span>
@@ -18,7 +18,7 @@
         </div>
         <div class="post__content">
           <p>The longhorn reared its enormous head and eyed me knowingly. 'Please don't charge,' I uttered politely. All the reassurance that had come with my authentic cowboy hat had shattered, and as the bull's legs began to start up, like a plane propeller kicking into life, i realised how dangeriously under qualified I was for this role.</p>
-          <img src="/static/peaks.jpg" alt="">
+          <img src="static/peaks.jpg" alt="">
           <p>I was in Saskatchewan, traversing its unique landscape that coils from flat prairie in the south to rugged woodland in the north. The central Canadian province is (bar a few blemishes of white metropolis) like its flag: divided into two sections of green and gold.</p>
           <p>The immense landscape is all consuming, and hikers, horsemen, fishermen and adventurers travel from across the globe to lose themselves within it. Long before I’d witnessed the pull of a pike on a fishing rod or considered the extent of the damage a bull’s horn could do to a man’s internal organs, I’d felt the wilderness of the place.</p>
         </div>
@@ -31,7 +31,10 @@
 export default {
   props: ['visible', 'post'],
   data () {
-
+    return {
+    }
+  },
+  created () {
   }
 }
 </script>
@@ -130,9 +133,9 @@ export default {
 }
 
 .post__header img {
-  width: 100%;
+  width: 100vw;
   position: absolute;
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
 
 .post__sidebar {

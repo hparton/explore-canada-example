@@ -36,7 +36,7 @@ export default {
       activePost: false,
       posts: [
         {
-          img: '/static/peaks.jpg',
+          img: 'static/peaks.jpg',
           category: 'Featured',
           date: '03.02.17',
           title: 'Canada was named the top country to travel to in 2017',
@@ -45,7 +45,7 @@ export default {
           hidden: false
         },
         {
-          img: '/static/road.jpg',
+          img: 'static/road.jpg',
           category: 'Future Travel',
           date: '21.01.17',
           title: 'The Explore Canada road trip',
@@ -54,7 +54,7 @@ export default {
           hidden: false
         },
         {
-          img: '/static/valley.jpg',
+          img: 'static/valley.jpg',
           category: 'Saskatchewan',
           date: '28.12.16',
           title: 'Explore the Land of the Living Skies',
