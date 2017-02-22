@@ -18,7 +18,7 @@
         </div>
         <div class="post__content">
           <p>The longhorn reared its enormous head and eyed me knowingly. 'Please don't charge,' I uttered politely. All the reassurance that had come with my authentic cowboy hat had shattered, and as the bull's legs began to start up, like a plane propeller kicking into life, i realised how dangeriously under qualified I was for this role.</p>
-          <img src="./assets/peaks.jpg" alt="">
+          <img src="/static/peaks.jpg" alt="">
           <p>I was in Saskatchewan, traversing its unique landscape that coils from flat prairie in the south to rugged woodland in the north. The central Canadian province is (bar a few blemishes of white metropolis) like its flag: divided into two sections of green and gold.</p>
           <p>The immense landscape is all consuming, and hikers, horsemen, fishermen and adventurers travel from across the globe to lose themselves within it. Long before I’d witnessed the pull of a pike on a fishing rod or considered the extent of the damage a bull’s horn could do to a man’s internal organs, I’d felt the wilderness of the place.</p>
         </div>
@@ -31,13 +31,7 @@
 export default {
   props: ['visible', 'post'],
   data () {
-    return {
-      img: './src/assets/peaks.jpg',
-      title: 'Exploring the Land of the Living Skies',
-      category: 'Saskatchewan',
-      date: '28.12.16',
-      desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem natus repellat qui deleniti enim aspernatur consequuntur accusantium pariatur.'
-    }
+
   }
 }
 </script>
