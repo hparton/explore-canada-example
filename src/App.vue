@@ -224,6 +224,8 @@ export default {
   position: absolute;
   z-index: -2;
   width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   top: 0;
   transition: 0.5s 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000);
 }

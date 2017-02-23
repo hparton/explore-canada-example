@@ -134,6 +134,8 @@ export default {
 
 .post__header img {
   width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   position: absolute;
   transform: scale(1.2);
 }
