@@ -233,13 +233,17 @@ export default {
   transform: scale(1.2);
 }
 
+.panel:nth-child(2).open .panel__background {
+  transform: translateX(-50vw) scale(1.2);
+}
+
 .panel:nth-child(1) .panel__background {
   left: 0;
 }
 
 .panel:nth-child(2) .panel__background {
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50vw);
 }
 
 .panel:nth-child(3) .panel__background {
